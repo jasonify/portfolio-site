@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jason Bautista</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+<style>
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.main-container{
+  text-align: center;
+  height: 100vh;
+  background-image: radial-gradient(50% 100%, #FFFFFF 3%, #EDEDED 100%);
+  padding: 10px;
+}
+.content{
+  display: inline-block;
+  text-align: left;
+}
+.hero{
+  font-family: Lato-Hairline, Helvetica;
+  font-size: 2.8em; /* 14vw;*/
+  color: #737373;
+  letter-spacing: 0.3em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin-top: 20px;
+}
+
+.subsection {
+  margin-top: 40px;
+}
+
+.subsection-content{
+  margin-top: 20px;
+}
+
+.subsection-content-item{
+  transition: opacity  0.5s ease;
+  opacity: 0.15;
+  cursor: pointer;
+}
+
+.subsection-content-item:hover{
+  opacity: 1;
+}
+.subtitle {
+  /* I’m a freelance desi: */
+  font-family: Lato-Light;
+  font-size: 20px;
+  color: #444444;
+  letter-spacing: 2.92px;
+}
+
+.contact {
+  font-size: 0.9em;
+  color: #A7A7A7;
+  unicode-bidi:bidi-override;
+  direction:rtl;
+}
+
+a {
+    text-decoration: none; /* no underline */
+}
+
+@media (min-width: 800px) {
+
+  .content {
+    margin-top: 50px;
+  }
+}
+</style>
+</head>
+<body>
+  
+  <div class="main-container">
+    <div class="content">
+      <div class="hero">Jason Bautista</div>
+      <div class="subtitle tagline">
+        I’m a freelance designer & developer.
+      </div>
+
+      <div class="subtitle subsection">
+        Find me on:
+        <div class="subsection-content">
+          <a href="https://dribbble.com/jasonify" target="_blank">
+            <span class="subsection-content-item">
+              <img src="images/dribbble-ball-mark.svg">
+            </span>
+          </a>
+
+          <a href="https://github.com/jasoncbautista" target="_blank">
+            <span class="subsection-content-item">
+              <img src="images/github-mark.svg">
+            </span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/jasoncbautista" target="_blank">
+            <span class="subsection-content-item">
+              <img src="images/linkedin-mark.svg">
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="subtitle subsection">
+        Give me a shout:
+        <div class="subsection-content">
+          <span class="contact">
+            ude.drofnats.sc@bcnosaj
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
