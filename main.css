@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(50% 100%, #FFFFFF 3%, #EDEDED 100%);
+}
+.main-container{
+  text-align: center;
+  height: 100vh;
+  padding: 10px;
+}
+
+
+/*** PROJECT ***/
+.project {
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-left {
+  text-align: left;
+}
+.project-title{
+  font-family: Lato-Light, Helvetica, Arial;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5E5E5E;
+  margin: 15px 0;
+}
+
+.project-subtitle {
+  font-family: Lato-Regular;
+  font-size: 14px;
+  color: #C2C8CB;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+.project-name {
+  /* Sticky Universe: */
+  font-family: Lato-Regular;
+  font-size: 20px;
+  color: #444444;
+  margin: 15px 0;
+}
+
+.project-hero-img {
+  max-width: 800px;
+  width: 100%;
+}
+
+.project-table-of-contents ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+
+/*** PROJECT **/
+
+.content{
+  display: inline-block;
+  text-align: left;
+}
+.hero{
+  font-family: Lato-Light, Helvetica;
+  font-size: 2.8em;
+  color: #5E5E5E;
+  letter-spacing: 0.3em;
+  line-height: 1.1em;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin-top: 20px;
+}
+
+.subsection {
+  margin-top: 40px;
+}
+
+.subsection-content{
+  margin-top: 20px;
+}
+
+.subsection-content-item{
+  transition: opacity  0.5s ease;
+  opacity: 0.15;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.subsection-content-item:hover{
+  opacity: 1;
+}
+.subtitle {
+  /* I’m a freelance desi: */
+  font-family: Lato-Light;
+  font-size: 20px;
+  color: #444444;
+}
+
+.contact {
+  font-size: 0.9em;
+  color: #A7A7A7;
+  unicode-bidi:bidi-override;
+  direction:rtl;
+}
+
+.desc {
+  margin-top: 20px;
+}
+.social {
+  margin-top: 80px;
+}
+a {
+    text-decoration: none; /* no underline */
+}
+
+/** PROJECT  **/
+@media (min-width: 550px) {
+  .content {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
