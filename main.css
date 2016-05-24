@@ -55,6 +55,9 @@ body {
   list-style-type: none;
 }
 
+.project-table-of-contents li{
+  padding: 8px 0;
+}
 
 /*** PROJECT **/
 
