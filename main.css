@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: radial-gradient(50% 100%, #FFFFFF 3%, #EDEDED 100%);
+  font-family: Lato-Light, Helvetica, Arial;
 }
 .main-container{
   text-align: center;
@@ -59,6 +60,14 @@ body {
   padding: 8px 0;
 }
 
+.project-content-title {
+font-family: Lato-Regular;
+font-size: 14px;
+color: #818181;
+text-transform: uppercase;
+padding-bottom: 20px;
+}
+
 /*** PROJECT **/
 
 .content{
@@ -97,7 +106,6 @@ body {
   opacity: 1;
 }
 .subtitle {
-  /* I’m a freelance desi: */
   font-family: Lato-Light;
   font-size: 20px;
   color: #444444;
@@ -118,6 +126,11 @@ body {
 }
 a {
     text-decoration: none; /* no underline */
+}
+
+
+.footer{
+  min-height: 100px;
 }
 
 /** PROJECT  **/
