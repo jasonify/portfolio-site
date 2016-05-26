@@ -152,6 +152,21 @@ a:active {
 }
 
 /** PROJECT  **/
+.projects-entry {
+  margin-top: 30px;
+}
+
+.projects-entry-title {
+  text-align: left;
+  padding: 8px 0px;
+}
+
+.projects-entry-tags {
+  text-align: right;
+  padding: 4px 0px;
+  font-size: 0.8em;
+  font-family: Lato-LightItalic, Helvetica;
+}
 
 .footer{
   min-height: 100px;
