@@ -128,12 +128,36 @@ a {
     text-decoration: none; /* no underline */
 }
 
+a:link {
+      color: #888888;
+}
+
+/* visited link */
+a:visited {
+  color: #D49736;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF6E00;
+}
+/* selected link */
+a:active {
+  color: #E0D6C7;
+}
+
+
+.project-section {
+  padding-bottom: 30px;
+}
+
+/** PROJECT  **/
 
 .footer{
   min-height: 100px;
 }
 
-/** PROJECT  **/
+
 @media (min-width: 550px) {
   .content {
     margin-top: 50px;
