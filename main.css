@@ -139,6 +139,9 @@ ul {
     text-decoration: none; /* no underline */
 }
 
+.project-entry-link{
+  transition: 0.0s;
+}
 .project-entry-link:hover {
   opacity: 0.8;
 }
@@ -203,10 +206,25 @@ li a:active {
 }
 
 .portfolio-link{
+  font-size: 20px;
   display: block;
   margin-top: 40px;
+  transition: 0.3s;
 
 }
+
+.portfolio-link:link{
+  color: #FF9B7C;
+}
+.portfolio-link:visited{
+  color: #FF9B7C;
+}
+.portfolio-link:hover{
+  color: #FF4F19;
+}
+
+
+
 
 
 @media (min-width: 550px) {
