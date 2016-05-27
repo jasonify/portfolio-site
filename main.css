@@ -128,21 +128,21 @@ a {
     text-decoration: none; /* no underline */
 }
 
-a:link {
+li a:link {
       color: #888888;
 }
 
 /* visited link */
-a:visited {
+li a:visited {
   color: #D49736;
 }
 
 /* mouse over link */
-a:hover {
+li a:hover {
   color: #FF6E00;
 }
 /* selected link */
-a:active {
+li a:active {
   color: #E0D6C7;
 }
 
@@ -179,6 +179,7 @@ a:active {
 .portfolio-link{
   display: block;
   margin-top: 40px;
+
 }
 
 
