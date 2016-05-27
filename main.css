@@ -76,7 +76,7 @@ padding-bottom: 20px;
 }
 .hero{
   font-family: Lato-Light, Helvetica;
-  font-size: 2.8em;
+  font-size: 2.4em;
   color: #5E5E5E;
   letter-spacing: 0.3em;
   line-height: 1.1em;
@@ -122,7 +122,7 @@ padding-bottom: 20px;
   margin-top: 20px;
 }
 .social {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 a {
     text-decoration: none; /* no underline */
@@ -146,6 +146,10 @@ a:active {
   color: #E0D6C7;
 }
 
+.centerly {
+  max-width: 95%;
+  margin: 0 auto;
+}
 
 .project-section {
   padding-bottom: 30px;
@@ -170,6 +174,11 @@ a:active {
 
 .footer{
   min-height: 100px;
+}
+
+.portfolio-link{
+  display: block;
+  margin-top: 40px;
 }
 
 
