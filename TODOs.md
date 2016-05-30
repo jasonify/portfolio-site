@@ -1,3 +1,9 @@
+[ ] Image popup:
+  - http://dimsemenov.com/plugins/magnific-popup/documentation.html
+    http://codepen.io/dimsemenov/pen/qGIlh
+    Gallery: http://codepen.io/dimsemenov/pen/hutrb
+    http://codepen.io/mgo/pen/ykgjb
+
 [ ] Add Space Candy
   ---> Already did all the initial wor 
     -- word map
