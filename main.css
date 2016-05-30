@@ -4,6 +4,10 @@ body {
   background-image: radial-gradient(50% 100%, #FFFFFF 3%, #EDEDED 100%);
   font-family: Lato-Light, Helvetica, Arial;
 }
+
+body.spacecandy{
+  background-image: radial-gradient(100% 100%, #FFFFFF 100%, #FFF 100%);
+}
 .main-container{
   text-align: center;
   height: 100vh;
@@ -19,6 +23,12 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+.project.wide {
+  max-width: 1140px;
+}
+
+
 .text-left {
   text-align: left;
 }
@@ -47,7 +57,6 @@ body {
 }
 
 .project-hero-img {
-  max-width: 800px;
   width: 100%;
 }
 

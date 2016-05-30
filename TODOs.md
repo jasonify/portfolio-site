@@ -1,9 +1,17 @@
 [ ] Add Space Candy
----> Already did a lot of work...
+  ---> Already did all the initial wor 
+    -- word map
+    -- logo wor
 [ ] Sticky Universe
+  -- link with legend at the top
   -- personas
+  -- logo wor
   -- competitive analysys
   -- user interviews (from meetup, etc)
+  -- video of rough working prototype 
+  -- Framer prototype
+  -- mobile paper prototypes
+  -- logo work (word maps, list of words, etc)
 
 [ ] Medical Records Wor
   [ ] add Medicinces / Labs work.
@@ -18,6 +26,7 @@
 
 
 Secondary
+[ ] Invision Prototype
 [ ] Design Philosophy
 [ ] Two column with media queries? 
 [ ] Goapet
