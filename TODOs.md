@@ -5,11 +5,10 @@
   -- competitive analysys
   -- user interviews (from meetup, etc)
 
-
-
-[ ] add Medicinces / Labs work.
-[ ] add Signature Capture wor
-    -- edit video of prototype runs
+[ ] Medical Records Wor
+  [ ] add Medicinces / Labs work.
+  [ ] add Signature Capture wor
+      -- edit video of prototype runs
 
 [ ]  hour tracker, 
       [ ] add other animations I've made:
@@ -30,3 +29,7 @@ Teriary
   -- personas
   -- wireframes
   -- flows
+
+[ ] optimize images --> progressive 
+[ ] optimize images for mobile
+  -- background CSS
