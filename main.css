@@ -246,7 +246,27 @@ li a:active {
 
 
 
+
+.clear {
+  padding-top: 100px;
+  clear: both;
+}
+
+
 @media (min-width: 550px) {
+  .imgs-3{
+    float: left;
+    display: inline-block;
+    width: 31%;
+    padding: 1%;
+
+  }
+  .img-2{
+    float: left;
+    display: inline-block;
+    width: 48%;
+    padding: 1%;
+  }
   .content {
     margin-top: 50px;
   }
