@@ -244,16 +244,30 @@ li a:active {
   height: 100%;
 }
 
-
+.center {
+  text-align: center;
+}
 
 
 .clear {
   padding-top: 100px;
   clear: both;
 }
+.imgs-3-hidden{
+  display: none;
+}
+
 
 
 @media (min-width: 550px) {
+  .imgs-3-hidden{
+    float: left;
+    display: inline-block;
+    width: 31%;
+    padding: 1%;
+
+  }
+
   .imgs-3{
     float: left;
     display: inline-block;
