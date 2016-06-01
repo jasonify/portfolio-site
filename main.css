@@ -32,7 +32,6 @@ body.spacecandy{
 
 }
 .projects-entry-title{
-  width: 90%;
   max-width: 800px;
   text-align: center;
   margin-left: auto;
@@ -40,7 +39,6 @@ body.spacecandy{
 }
 
 .projects-entry-tags{
-  width: 90%;
   max-width: 800px;
   text-align: center;
   margin-left: auto;
