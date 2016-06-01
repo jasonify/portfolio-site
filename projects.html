@@ -123,15 +123,19 @@
     </div>
   </div>
   <script type="text/javascript">
-    $('.project-hero-img-static').first().hide();
-    $('.project-hero-img-animated').first().show();
+    var staticCurr = $('.project-hero-img-static').first();
+    var animCurr = $('.project-hero-img-animated').first();
+    staticCurr.hide();
+    animCurr.show();
 
     $('.project-hero-img-static').mouseover(function(ee){
       var el = $(ee.target);
 
       var animated = $(el).closest('.projects-entry').find('.project-hero-img-animated');
-      $('.project-hero-img-animated').slideUp();
-      $('.project-hero-img-static').slideDown();
+      staticCurr.slideDown();
+      animCurr.slideUp();
+      staticCurr = el;
+      animCurr = animated;
 
       $(el).slideUp();
       animated.slideDown();
