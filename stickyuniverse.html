@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <title>Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="main.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>  <link rel="stylesheet" href="main.css">
+
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.js"></script>
+
+
+
 </head> <body>
   
   <div class="main-container">
@@ -18,7 +24,8 @@
         <div class="text-left">
           <div class="project-name">Sticky Universe</div>
          </div>
-        <img class="project-hero-img" src="http://fpoimg.com/1400x1400"
+        <img class="project-hero-img" 
+             src="images/stickyuniverse/v3.jpg"
         alt="project-hero-image">
         <div class="project-table-of-contents text-left">
           <ul class="">
@@ -28,6 +35,7 @@
             <li> <a href="#journey-map"> Journey Map </a> </li>
           </ul>
         </div>
+
         <div class="project-content">
           <div class="project-section">
             <div class="project-content-title">
@@ -43,6 +51,35 @@
         </div>
 
         <div class="project-section">
+          <div class="project-content-content">
+
+            <div class="project-content-title">
+              <a name="initial_planning">
+                Initial Planning
+              </a>
+            </div>
+
+            <a class="with-caption img-2"
+              href="images/stickyuniverse/planning_user_case.jpg">
+              <img class="project-hero-img"
+                   src="images/stickyuniverse/planning_user_case.jpg"
+                   alt="project-hero-image">
+              </a>
+
+            <a class="with-caption img-2"
+              href="images/stickyuniverse/planning_personas.jpg">
+              <img class="project-hero-img"
+                   src="images/stickyuniverse/planning_personas.jpg"
+                   alt="project-hero-image">
+            </a>
+
+          </div>
+        </div>
+
+
+
+
+        <div class="project-section">
           <div class="project-content-title">
             <a name="personas">
               Personas
@@ -50,25 +87,47 @@
           </div>
           <div class="project-content-content">
 
-          <img class="project-hero-img" src="http://fpoimg.com/1400x1400"
+          <img class="project-hero-img"
+               src="images/stickyuniverse/v3.png"
                                         alt="project-hero-image">
           </div>
         </div>
-      </div>
-      <p>
-      From user testing, found that a chat style entry that is quick and
-      low friction was great for getting all ideas from all participants
-      in a brainstorm session going.
 
-      - Reason for buttom button
+        <div class="project-content">
+          <div class="project-section">
+            <div class="project-content-title">
+              <a name="user button">
+                User button
+              </a>
+            </div>
+            <div class="project-content-content text-left">
+              From user testing, found that a chat style entry that is quick and
+              low friction was great for getting all ideas from all participants
+              in a brainstorm session going.
+
+              - Reason for buttom button
+
+            </div>
+          </div>
+        </div>
+
+      <p>
       </p>
 
 
-
+      </div>
 
       </div>
 
       <div class="footer"></div>
   </div>
+  <script>
+  $(document).ready(function() {
+    $('.with-caption').magnificPopup({type:'image',   gallery: {
+      enabled: true
+    }, });
+  });
+  </script>
+
 </body>
 </html>
