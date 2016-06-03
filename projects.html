@@ -24,25 +24,7 @@
       <!-- Brett Favre Animation -->
 
 
-      <div class="projects-entry">
-        <a class="project-entry-link" href="medicalrecords.html">
-        <div class="projects-entry-title">
-          Medical Records
-        </div>
-        <img class="project-hero-img-animated"
-             src="images/medicalrecords/meds_animation_8_secs_short.gif"
-                                      alt="project-hero-image">
-
-        <img class="project-hero-img-static"
-             src="images/projects/medicalrecords.png"
-                                      alt="project-hero-image">
-
-
-        <div class="projects-entry-tags">
-          ux, react 
-        </div>
-        </a>
-      </div>
+      
 
 
 
@@ -77,6 +59,25 @@
       </div>
 
 
+      <div class="projects-entry">
+        <a class="project-entry-link" href="medicalrecords.html">
+        <div class="projects-entry-title">
+          Medical Records
+        </div>
+        <img class="project-hero-img-animated"
+             src="images/medicalrecords/meds_animation_8_secs_short.gif"
+                                      alt="project-hero-image">
+
+        <img class="project-hero-img-static"
+             src="images/projects/medicalrecords.png"
+                                      alt="project-hero-image">
+
+
+        <div class="projects-entry-tags">
+          ux, react 
+        </div>
+        </a>
+      </div>
 
       <div class="projects-entry">
         <a class="project-entry-link" href="http://live2create.net"
@@ -137,8 +138,8 @@
   </div>
   <script type="text/javascript">
 
-    var staticCurr = $('.project-hero-img-static').first();
-    var animCurr = $('.project-hero-img-animated').first();
+    var staticCurr = $($('.project-hero-img-static')[1]);
+    var animCurr = $($('.project-hero-img-animated')[1]);
     staticCurr.hide();
     animCurr.show();
 
