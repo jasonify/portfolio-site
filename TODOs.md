@@ -1,3 +1,31 @@
+    CARD SORTING
+    : branding
+      : colors
+      : forms sample
+    : mobile video
+    : screen designs - share records
+    : mobile mockups
+    : journey map
+    : timeline screen designs, attempts
+    -- Wireframes (share records)
+    -- Balsamiq Mockups
+ 
+    ---------------
+
+    : Hour Tracker page
+    : Brett Favre + Felice 
+   : Education Projects: docuy, etc
+
+
+
+    -- Streak, Sqor, ActiveDJ, Wordtris
+
+    -- sticky universe, benchmarking
+    -- sticky universe, 
+
+
+
+
 [ ] Image popup:
   - http://dimsemenov.com/plugins/magnific-popup/documentation.html
     http://codepen.io/dimsemenov/pen/qGIlh
