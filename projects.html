@@ -134,19 +134,30 @@
     staticCurr.hide();
     animCurr.show();
 
+    var animating = false;
     $('.project-hero-img-static').mouseover(function(ee){
+     
       var el = $(ee.target);
 
       var animated = $(el).closest('.projects-entry').find('.project-hero-img-animated');
-      if(animated === animCurr) return;
+      if(animated === animCurr || animating) return;
 
-      staticCurr.slideDown();
-      animCurr.slideUp();
-      staticCurr = el;
-      animCurr = animated;
+      animating = true;
+      $(el).slideUp(100, function(){
+        animated.slideDown(300, function() {
+          animCurr.slideUp(400, function(){
+              staticCurr.slideDown(500, function(){
+              staticCurr = el;
+              animCurr = animated;
+              animating = false;
+            });
+          });
+        });
 
-      $(el).slideUp();
-      animated.slideDown();
+      });
+      
+
+
     });
 
   </script>
