@@ -138,6 +138,8 @@
       var el = $(ee.target);
 
       var animated = $(el).closest('.projects-entry').find('.project-hero-img-animated');
+      if(animated === animCurr) return;
+
       staticCurr.slideDown();
       animCurr.slideUp();
       staticCurr = el;
