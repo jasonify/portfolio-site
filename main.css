@@ -105,7 +105,7 @@ font-family: Lato-Regular;
 font-size: 14px;
 color: #818181;
 text-transform: uppercase;
-padding-bottom: 20px;
+padding: 40px 0px 10px 0px;
 }
 
 /*** PROJECT **/
@@ -218,6 +218,7 @@ li a:active {
 }
 
 .project-section {
+  clear: both;
   padding-bottom: 30px;
 }
 
@@ -280,7 +281,6 @@ li a:active {
 
 
 .clear {
-  padding-top: 100px;
   clear: both;
 }
 .imgs-3-hidden{
