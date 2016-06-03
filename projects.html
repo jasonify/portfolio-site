@@ -144,19 +144,15 @@
 
       animating = true;
 
-      animCurr.slideUp(400, function(){
-        staticCurr.slideDown(500, function(){
-          $(el).slideUp(400, function(){
-            animated.slideDown(500, function() {
-              staticCurr = el;
-              animCurr = animated;
-              animating = false;
-            });
-          });
-        });
-
+      animCurr.slideUp(300);
+      staticCurr.slideDown(500);
+      $(el).slideUp(400);
+      animated.slideDown(500, function() {
+        staticCurr = el;
+        animCurr = animated;
+        animating = false;
       });
-      
+
 
 
     });
