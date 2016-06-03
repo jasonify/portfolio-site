@@ -143,10 +143,11 @@
       if(animated === animCurr || animating) return;
 
       animating = true;
-      $(el).slideUp(100, function(){
-        animated.slideDown(300, function() {
-          animCurr.slideUp(400, function(){
-              staticCurr.slideDown(500, function(){
+
+      animCurr.slideUp(400, function(){
+        staticCurr.slideDown(500, function(){
+          $(el).slideUp(400, function(){
+            animated.slideDown(500, function() {
               staticCurr = el;
               animCurr = animated;
               animating = false;
