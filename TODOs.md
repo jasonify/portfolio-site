@@ -1,3 +1,22 @@
+----------------------------
+[ ] Outline business problem / solution 
+-- i.e team + client had to do less paper work 
+'My job was…”
+"and “I've worked closely with the developer to…” 
+[ ] deation phase, research, designs
+[ ] goals and results
+
+/*
+Furthering the previous tip about getting to the point, only feature
+your best samples and don't bother with anything less. Works that aren't
+exceptional – even if they're still good – will just water down the
+works that are great.
+
+*/
+----------------------------------------------------
+
+--------------------------------------------------
+
     CARD SORTING
     : branding
       : colors
