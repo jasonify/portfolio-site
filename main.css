@@ -61,6 +61,8 @@ body.v2-body{
 }
 
 
+
+
 /*TODO: [] min font size */
 @media (min-width: 550px) {
   body.v2-body{
@@ -78,13 +80,13 @@ body.v2-body{
   }
 
   .v2-header{
-    font-size: 3.2vw;
+    font-size: 5.2vw;
     letter-spacing: 0.5vw;
     margin-top: 10vh;
   }
 
   .v2-subheader {
-    font-size: 1.8vw;
+    font-size: 2.8vw;
     padding-top: 3vh;
     padding-bottom: 12vh;
   }
@@ -98,18 +100,35 @@ body.v2-body{
     max-width: 60vw;
     margin-left: auto;
     margin-right: auto;
-
   }
 
   .v2-text-med {
-    font-size: 1.4vw;
+    font-size: 2.8vw;
+    padding-bottom: 2vh;
+  }
+}
+
+/**************** LAPTOP *********************/
+@media (min-width: 768px) {
+
+  .v2-header{
+    font-size: 4.8vw;
+    letter-spacing: 0.5vw;
+    margin-top: 10vh;
+  }
+
+  .v2-subheader {
+    font-size: 2.5vw;
+    padding-top: 3vh;
+    padding-bottom: 12vh;
+  }
+
+  .v2-text-med {
+    font-size: 2.3vw;
     padding-bottom: 2vh;
   }
 
-
 }
-
-
 
 
 /*********************************************************************/
