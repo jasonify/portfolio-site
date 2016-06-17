@@ -61,6 +61,7 @@ body.v2-body{
 }
 
 
+/*TODO: [] min font size */
 @media (min-width: 550px) {
   body.v2-body{
     text-align: center;
@@ -88,9 +89,22 @@ body.v2-body{
     padding-bottom: 12vh;
   }
 
-  .v2-portfolio-link{ display: none}
+  .v2-portfolio-link{display: none}
+  .v2-socialy{
+    background-image: linear-gradient(-178deg, #FFFFFF 0%, #F9F9F9 100%);
+    box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.07);
+    padding: 4vh 0vh;
+    min-width: 450px;
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
 
+  }
 
+  .v2-text-med {
+    font-size: 1.4vw;
+    padding-bottom: 2vh;
+  }
 
 
 }
