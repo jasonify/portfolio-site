@@ -73,12 +73,19 @@ body.v2-body{
     background: #F6F6F6;
     background-image: none;
     border: 1px solid #F2F2F2;
+    min-height: 100vw;
   }
 
   .v2-header{
     font-size: 3.2vw;
     letter-spacing: 0.5vw;
     margin-top: 10vh;
+  }
+
+  .v2-subheader {
+    font-size: 1.8vw;
+    padding-top: 3vh;
+    padding-bottom: 12vh;
   }
 
   .v2-portfolio-link{ display: none}
