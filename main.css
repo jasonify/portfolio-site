@@ -8,6 +8,8 @@ body {
 body.v2-body{
   color: #5E5E5E;
   background-image: linear-gradient(-180deg, #FFFFFF 3%, #F1F1F1 98%);
+
+  font-family: Lato-Light;
 }
 
 .v2-main-container{
@@ -16,16 +18,22 @@ body.v2-body{
 }
 
 .v2-header{
-  font-family: Lato-Light;
   font-size: 13vw;
   letter-spacing: 2.4vw;
   text-transform: uppercase;
 }
 .v2-subheader{
-  font-family: Lato-Light;
   font-size: 6vw;
   padding-top: 3vh;
   padding-bottom: 12vh;
+}
+
+.v2-text-med {
+  font-size: 4.5vw;
+  padding-bottom: 2vh;
+}
+.v2-icons img {
+  padding: 2vw;
 }
 
 /* TODO: better vertical centering!!! */
@@ -44,6 +52,7 @@ body.v2-body{
 
 .v2-icons{
   opacity: 0.65;
+  margin-bottom: 5vh;
 }
 
 /*********************************************************************/
