@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: radial-gradient(50% 100%, #FFFFFF 3%, #EDEDED 100%);
-  font-family: Lato-Light, Helvetica, Arial;
+  font-family: Lato, Helvetica, Arial;
 }
 
 
@@ -10,7 +10,10 @@ body {
   body.v2-body{
     color: #5E5E5E;
 
-    font-family: Lato-Light;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 20px;
+    
   }
 
   .v2-portfolio-link-desktop{
