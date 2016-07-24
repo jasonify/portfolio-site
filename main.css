@@ -50,7 +50,8 @@ body {
   left: 0;
   right: 0;
   text-align: center;
-  font-family: Lato-Regular;
+  font-family: Lato;
+  font-weight: 400 
   font-size: 16px;
   width: 100%;
   color: #1E1E1E;
@@ -218,7 +219,7 @@ body.spacecandy{
   text-align: left;
 }
 .project-title{
-  font-family: Lato-Light, Helvetica, Arial;
+  font-family: Lato, Helvetica, Arial;
   font-size: 1.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -227,7 +228,8 @@ body.spacecandy{
 }
 
 .project-subtitle {
-  font-family: Lato-Regular;
+  font-family: Lato;
+  font-weight: 400;
   font-size: 14px;
   color: #C2C8CB;
   line-height: 49px;
@@ -235,7 +237,8 @@ body.spacecandy{
 }
 .project-name {
   /* Sticky Universe: */
-  font-family: Lato-Regular;
+  font-family: Lato;
+  font-weight: 400;
   font-size: 20px;
   color: #444444;
   margin: 15px 0;
@@ -256,7 +259,8 @@ body.spacecandy{
 }
 
 .project-content-title {
-font-family: Lato-Regular;
+font-family: Lato;
+font-weight: 400;
 font-size: 14px;
 color: #818181;
 text-transform: uppercase;
@@ -270,7 +274,7 @@ padding: 40px 0px 10px 0px;
   text-align: left;
 }
 .hero{
-  font-family: Lato-Light, Helvetica;
+  font-family: Lato, Helvetica;
   font-size: 2.4em;
   color: #5E5E5E;
   letter-spacing: 0.3em;
@@ -301,7 +305,7 @@ padding: 40px 0px 10px 0px;
   opacity: 1;
 }
 .subtitle {
-  font-family: Lato-Light;
+  font-family: Lato;
   font-size: 20px;
   color: #444444;
 }
@@ -391,7 +395,7 @@ li a:active {
   text-align: right;
   padding: 4px 0px;
   font-size: 0.8em;
-  font-family: Lato-LightItalic, Helvetica;
+  font-family: Lato, Helvetica;
 }
 
 .footer{
