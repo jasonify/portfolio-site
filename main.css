@@ -396,6 +396,9 @@ li a:active {
   padding: 4px 0px;
   font-size: 0.8em;
   font-family: Lato, Helvetica;
+  font-weight: 300;
+  font-style:italic;
+
 }
 
 .footer{
