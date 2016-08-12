@@ -15,6 +15,10 @@ body {
     font-size: 20px;
     
   }
+  .v2-tagline{
+    display: none;
+  }
+
 
   .v2-portfolio-link-desktop{
     display: none;
@@ -72,6 +76,15 @@ body {
 
 /*TODO: [] min font size */
 @media (min-width: 550px) {
+
+  .v2-tagline{
+    display: block;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
   body.v2-body{
     text-align: center;
     margin: 4vw;
@@ -456,6 +469,7 @@ li a:active {
 }
 
 @media (min-width: 550px) {
+
 
 .hide-mobile{
   display: block;
