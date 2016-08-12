@@ -16,7 +16,9 @@ body {
     
   }
   .v2-tagline{
-    display: none;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    font-size: 0.9em;
   }
 
 
@@ -78,11 +80,13 @@ body {
 @media (min-width: 550px) {
 
   .v2-tagline{
-    display: block;
+
     padding-top: 40px;
+    padding-bottom: 10px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1em;
   }
 
 
