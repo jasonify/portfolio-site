@@ -40,21 +40,19 @@ window.onload = function(){
       // XXX: remove:
       window.ghettoMap = ghettoMap;
 
-      var scale = height/3;
-      drawLine(scale);
 
       document.body.addEventListener('mousemove', function(e){
+              var rgb =  1; //Math.floor(Math.random() * 3);
+        var rgbs = [0, 0, 0];
+        rgbs[rgb] = Math.floor(ghettoMap(e.clientY, 0, height, 30, 255));
+        var rgbStr = "rgb(" +  rgbs[0] + " , "  + rgbs[1]  + ", " + rgbs[2] + ")";
+        context.fillStyle = rgbStr;
+        console.log(rgbStr);
         console.log('e', e);
         context.translate(0, height/2);
         drawLine(e.clientX);
         context.translate(0, -height/2);
 
-        var rgb = Math.floor(Math.random() * 3);
-        var rgbs = [0, 0, 0];
-        rgbs[rgb] = ghettoMap(e.clientY, 0, height, 0, 255);
-        var rgbStr = "rgb(" +  rgbs[0] + " , "  + rgbs[1]  + ", " + rgbs[2] + ")";
-        context.fillStyle = rgbStr;
-        console.log(rgbStr);
 
 
       });
