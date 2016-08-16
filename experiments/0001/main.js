@@ -13,6 +13,15 @@ window.onload = function(){
       };
 
 
+      // Does not handle negative numbers
+      var ghettoMap = function(sourceValue, sourceLow, sourceHigh, targetLow, targetHigh) {
+        var sourceDiff = sourceHigh - sourceLow;
+        var targetDiff = targetHigh - targetLow;
+
+        var multiplyer = targetHigh / sourceDiff
+        return targetLow + multiplyer * sourceValue;
+      }
+
       var drawLine = function(scale) {
 
         // context.translate(0, height/2);
@@ -27,6 +36,7 @@ window.onload = function(){
         }
       };
 
+      window.ghettoMap = ghettoMap;
       var scale = height/3;
       drawLine(scale);
 
@@ -35,6 +45,9 @@ window.onload = function(){
         context.translate(0, height/2);
         drawLine(e.clientX);
         context.translate(0, -height/2);
+
+        ctx.fillStyle = "rgba(32, 45, 21, r_a)";
+
 
       });
 
