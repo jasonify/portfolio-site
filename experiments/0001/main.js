@@ -14,6 +14,7 @@ window.onload = function(){
 
 
       // Does not handle negative numbers
+      // TODO: Just do abs value to fix
       var ghettoMap = function(sourceValue, sourceLow, sourceHigh, targetLow, targetHigh) {
         var sourceDiff = sourceHigh - sourceLow;
         var targetDiff = targetHigh - targetLow;
@@ -25,7 +26,7 @@ window.onload = function(){
       var drawLine = function(scale) {
 
         // context.translate(0, height/2);
-        context.fillStyle="#8BF28B";
+        //context.fillStyle="#8BF28B";
 
         console.log('scale', scale);
 
@@ -36,7 +37,9 @@ window.onload = function(){
         }
       };
 
+      // XXX: remove:
       window.ghettoMap = ghettoMap;
+
       var scale = height/3;
       drawLine(scale);
 
@@ -46,7 +49,12 @@ window.onload = function(){
         drawLine(e.clientX);
         context.translate(0, -height/2);
 
-        ctx.fillStyle = "rgba(32, 45, 21, r_a)";
+        var rgb = Math.floor(Math.random() * 3);
+        var rgbs = [0, 0, 0];
+        rgbs[rgb] = ghettoMap(e.clientY, 0, height, 0, 255);
+        var rgbStr = "rgb(" +  rgbs[0] + " , "  + rgbs[1]  + ", " + rgbs[2] + ")";
+        context.fillStyle = rgbStr;
+        console.log(rgbStr);
 
 
       });
