@@ -66,7 +66,7 @@ window.onload = function(){
         console.log('e', e);
         mouseX = e.clientX;
         console.log('offset', offset, mouseX, centerX);
-        offset = Math.min(height / (Math.abs(mouseX - centerX) + 1)  , height * 0.1);
+        offset = Math.min(height / (Math.abs(mouseX - centerX) + 1)  , height * 0.10);
       });
 
 };
