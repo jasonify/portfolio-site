@@ -1,60 +1,82 @@
 window.onload = function(){
   console.log('Loaded');
+
+
+  var img = new Image();
+  img.src = 'images/head.png';
+
+  var imgBody = new Image();
+  imgBody.src = 'images/body.png';
+
+
+
+
+
   var canvas = document.getElementById('canvas'),
       context = canvas.getContext('2d'),
       width = canvas.width = window.innerWidth,
       height = canvas.height = window.innerHeight
 
+      //var img = document.getElementById("head");
+
+      var centerY = height * 0.5,
+          centerX = width * 0.5,
+          offset = height * 0.01,
+          mouseX = 0,
+          speed= 0.1,
+          angle = 0;
+
+      function render() {
+        var y = centerY  + Math.sin(angle) * offset;
+
+        context.clearRect(0,0, width, height);
+        context.beginPath();
+        var imgWidth = img.width / 2;
+        var imgHeight = img.height / 2;
+
+
+        context.drawImage(imgBody, centerX - imgBody.width/4, centerY - imgBody.height /4, imgBody.width/2 , imgBody.height/2);
+        
+
+        context.drawImage(img, centerX - imgWidth/2, y- imgHeight /2, imgWidth, imgHeight);
+
+        angle += speed;
+
+        requestAnimationFrame(render);
+      };
+
+      img.onload = function(){
+        console.log('loaded img');
+        render();
+      }
+
+      imgBody.onload = function(){
+        console.log('loaded imgBody');
+     }
+
       var clear = function(){
-        console.log('width', width);
+        console.log('width',  width);
         console.log('height', height);
         //context.translate(0, -height/2);
         context.clearRect(0, 0, width, height);
       };
 
 
-      // Does not handle negative numbers
-      // TODO: Just do abs value to fix
-      var ghettoMap = function(sourceValue, sourceLow, sourceHigh, targetLow, targetHigh) {
-        var sourceDiff = sourceHigh - sourceLow;
-        var targetDiff = targetHigh - targetLow;
-
-        var multiplyer = targetHigh / sourceDiff
-        return targetLow + multiplyer * sourceValue;
-      }
-
-      var drawLine = function(scale) {
-
-        // context.translate(0, height/2);
-        //context.fillStyle="#8BF28B";
-
-        console.log('scale', scale);
-
-        for(var angle  = 0; angle < Math.PI * 2; angle+=0.01){
-          var x = angle * scale;
-          y = Math.sin(angle) * scale;
-          context.fillRect(x,y, 3,3);
-        }
-      };
-
-      // XXX: remove:
-      window.ghettoMap = ghettoMap;
-
-
       document.body.addEventListener('mousemove', function(e){
-              var rgb =  1; //Math.floor(Math.random() * 3);
-        var rgbs = [0, 0, 0];
-        rgbs[rgb] = Math.floor(ghettoMap(e.clientY, 0, height, 30, 255));
-        var rgbStr = "rgb(" +  rgbs[0] + " , "  + rgbs[1]  + ", " + rgbs[2] + ")";
-        context.fillStyle = rgbStr;
-        console.log(rgbStr);
         console.log('e', e);
-        context.translate(0, height/2);
-        drawLine(e.clientX);
-        context.translate(0, -height/2);
-
-
-
+        mouseX = e.clientX;
+        console.log('offset', offset, mouseX, centerX);
+        offset = Math.min(height / (Math.abs(mouseX - centerX) + 4)  , height * 0.03);
       });
 
 };
+
+
+/*
+
+   window.onload = function() {
+   var c=document.getElementById("myCanvas");
+   var ctx=c.getContext("2d");
+   ctx.drawImage(img,10,10);
+   };
+*/
