@@ -8,10 +8,9 @@ window.onload = function(){
 
       var centerY = height * 0.5,
           centerX = width * 0.5,
-          offset = height * 0.4,
+          offset = height * 0.01,
           speed= 0.1,
           angle = 0;
-
 
       function render() {
         var y = centerY  + Math.sin(angle) * offset;
@@ -27,13 +26,11 @@ window.onload = function(){
 
       render();
 
-
       var clear = function(){
-        console.log('width', width);
+        console.log('width',  width);
         console.log('height', height);
         //context.translate(0, -height/2);
         context.clearRect(0, 0, width, height);
       };
-
 
 };
