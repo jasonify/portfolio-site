@@ -1,10 +1,17 @@
 window.onload = function(){
   console.log('Loaded');
 
+
+  var img = new Image();
+  img.src = 'images/head.png';
+
+
   var canvas = document.getElementById('canvas'),
       context = canvas.getContext('2d'),
       width = canvas.width = window.innerWidth,
       height = canvas.height = window.innerHeight
+
+      //var img = document.getElementById("head");
 
       var centerY = height * 0.5,
           centerX = width * 0.5,
@@ -17,14 +24,19 @@ window.onload = function(){
 
         context.clearRect(0,0, width, height);
         context.beginPath();
-        context.arc(centerX, y, 50, 0, Math.PI * 2, false);
-        context.fill();
+        var imgWidth = img.width / 2;
+        var imgHeight = img.height / 2;
+        context.drawImage(img, centerX - imgWidth/2, y- imgHeight /2, imgWidth, imgHeight);
+
+        
         angle += speed;
 
         requestAnimationFrame(render);
       };
 
-      render();
+      img.onload = function(){
+        render();
+      }
 
       var clear = function(){
         console.log('width',  width);
@@ -34,3 +46,13 @@ window.onload = function(){
       };
 
 };
+
+
+/*
+
+   window.onload = function() {
+   var c=document.getElementById("myCanvas");
+   var ctx=c.getContext("2d");
+   ctx.drawImage(img,10,10);
+   };
+*/
