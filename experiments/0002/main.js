@@ -19,10 +19,10 @@ window.onload = function(){
       var bee = document.getElementById('bee');
       var body = document.body;
 
-    counter++;
-    if(counter >= 100) counter = 0;
+      //counter+=0.5;
+    if(counter >= 50) counter = 0;
     var bg1 = 'black';
-    var bg2 = 'linear-gradient(to bottom, #fefcea 0%,#f1da36 100%)'
+    var bg2 = 'linear-gradient(to bottom, #f9ed7f '+ counter + '%,#f1da36 ' + (100 - counter) +'%)'
 
     requestAnimationFrame(render);
 
