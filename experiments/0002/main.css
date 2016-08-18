@@ -1,0 +1,24 @@
+
+.bee {
+  width: 500px;
+  height: 500px;
+  background: #F4E44A;
+  -webkit-mask-image: url(images/bee.svg);
+  -webkit-mask-repeat: no-repeat;
+  cursor: pointer;
+
+
+  }
+.bee:hover{
+  opacity: 0.7;
+  
+}
+
+body{
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
