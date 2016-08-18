@@ -10,6 +10,9 @@ window.onload = function(){
     toggled = !toggled;
     console.log('toggled');
 
+    $('#bee').animate({ 'margin-left': -25 }, 10).animate({ 'margin-left': 0 }, 50).animate({ 'margin-left': 25 }, 10).animate({ 'margin-left': 0 }, 50);
+
+
   });
 
 
