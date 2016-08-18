@@ -17,9 +17,19 @@ body {
   }
   .v2-tagline{
     padding-top: 25px;
-    padding-bottom: 60px;
-    font-size: 0.9em;
+    padding-bottom: 10px;
+    font-size: 0.8em;
   }
+
+
+  .v2-meetup{
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: 0.8em;
+
+  }
+
+
 
 
   .v2-portfolio-link-desktop{
@@ -70,10 +80,13 @@ body {
 
 .v2-icons{
   opacity: 0.65;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 
+.link{
+  text-decoration: underline;
+}
 
 
 /*TODO: [] min font size */
@@ -88,6 +101,15 @@ body {
     margin-right: auto;
     font-size: 1em;
   }
+
+  .v2-meetup{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 0.9em;
+  }
+
+
+
 
 
   body.v2-body{
