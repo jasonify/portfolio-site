@@ -20,7 +20,9 @@ window.onload = function(){
           centerX = width * 0.5,
           offset = height * 0.01,
           mouseX = 0,
-          speed= 0.1,
+          speed = 0.1,
+          rotateAngle = 0,
+          rotateSpeed = 0.001,
           angle = 0;
 
       function render() {
@@ -35,9 +37,19 @@ window.onload = function(){
         context.drawImage(imgBody, centerX - imgBody.width/4, centerY - imgBody.height /4, imgBody.width/2 , imgBody.height/2);
         
 
+        context.rotate(rotateAngle);
+        rotateAngle+= rotateSpeed;
         context.drawImage(img, centerX - imgWidth/2, y- imgHeight /2, imgWidth, imgHeight);
+        console.log(rotateAngle);
 
-        angle += speed;
+        if(rotateAngle >= (Math.PI * .03)){
+          rotateSpeed *= -1;
+        } else if (rotateAngle  <= ( Math.PI * -0.03)){
+          rotateSpeed *= -1
+        }
+        context.restore();
+
+        //angle += speed;
 
         requestAnimationFrame(render);
       };
