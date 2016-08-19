@@ -34,25 +34,28 @@ window.onload = function(){
         var imgHeight = img.height / 2;
 
 
-
-        context.rotate(rotateAngle);
-
-        context.drawImage(img, centerX - imgWidth/2, y- imgHeight /2, imgWidth, imgHeight);
+        context.drawImage(imgBody, centerX - imgBody.width/4, centerY - imgBody.height /4, imgBody.width/2 , imgBody.height/2);
 
 
         context.rotate(-1*rotateAngle);
 
+        context.drawImage(img, centerX - imgWidth/2, y- imgHeight /2, imgWidth, imgHeight);
 
 
-        context.drawImage(imgBody, centerX - imgBody.width/4, centerY - imgBody.height /4, imgBody.width/2 , imgBody.height/2);
+        context.rotate(rotateAngle);
+
+
+
+
+
         
 
         rotateAngle+= rotateSpeed;
         console.log(rotateAngle);
 
-        if(rotateAngle >= (Math.PI * 0.03)){
+        if(rotateAngle >= (Math.PI * 0.003)){
           rotateSpeed *= -1;
-        } else if (rotateAngle  <= ( Math.PI * -0.03)){
+        } else if (rotateAngle  <= ( Math.PI * -0.003)){
           rotateSpeed *= -1
         }
 
@@ -79,11 +82,16 @@ window.onload = function(){
       };
 
 
+     
       document.body.addEventListener('mousemove', function(e){
         console.log('e', e);
         mouseX = e.clientX;
-        console.log('offset', offset, mouseX, centerX);
-        offset = Math.min(height / (Math.abs(mouseX - centerX) + 4)  , height * 0.03);
+        
+        if(mouseX > window.innerWidth / 2){
+          document.body.style.background ='black';
+        } else {
+          document.body.style.background ='#fff4e6';
+        }
       });
 
 };
