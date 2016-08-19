@@ -34,20 +34,28 @@ window.onload = function(){
         var imgHeight = img.height / 2;
 
 
+
+        context.rotate(rotateAngle);
+
+        context.drawImage(img, centerX - imgWidth/2, y- imgHeight /2, imgWidth, imgHeight);
+
+
+        context.rotate(-1*rotateAngle);
+
+
+
         context.drawImage(imgBody, centerX - imgBody.width/4, centerY - imgBody.height /4, imgBody.width/2 , imgBody.height/2);
         
 
-        context.rotate(rotateAngle);
         rotateAngle+= rotateSpeed;
-        context.drawImage(img, centerX - imgWidth/2, y- imgHeight /2, imgWidth, imgHeight);
         console.log(rotateAngle);
 
-        if(rotateAngle >= (Math.PI * .03)){
+        if(rotateAngle >= (Math.PI * 0.03)){
           rotateSpeed *= -1;
         } else if (rotateAngle  <= ( Math.PI * -0.03)){
           rotateSpeed *= -1
         }
-        context.restore();
+
 
         //angle += speed;
 
