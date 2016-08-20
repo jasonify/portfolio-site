@@ -11,8 +11,11 @@ window.onload = function(){
 
       var tree = new Image();
       tree.src  = 'tree.png';
+      var fps = 60;
 
       var render = function() {
+        setTimeout(function() {
+
         context.restore();
         context.clearRect(0, 0, width, height);
         context.save();
@@ -23,16 +26,15 @@ window.onload = function(){
 
         var x = radius * Math.sin(angle);
         var y =  radius * Math.cos(angle);
-        console.log('x', x, 'y', y);
 
         context.arc(x, y, objSize, 0, 2 * Math.PI);
         context.stroke();
         context.fill();
 
         angle+=speed;
-        console.log('angle', angle);
 
         requestAnimationFrame(render);
+        }, 1000/ fps);
        
       }
 
