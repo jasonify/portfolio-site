@@ -38,6 +38,11 @@ window.onload = function(){
         angle+=speed;
 
         requestAnimationFrame(render);
+        if(y > 0){
+          document.body.style.background='black';
+        } else {
+          document.body.style.background='white';
+        }
         }, 1000/ fps);
        
       }
