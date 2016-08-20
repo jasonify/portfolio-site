@@ -6,12 +6,14 @@ window.onload = function(){
       height = canvas.height = window.innerHeight,
       radius = width / 4,
       angle = 0,
-      speed = 0.05,
+      speed = 0.02,
       objSize = 15;
 
       var tree = new Image();
       tree.src  = 'tree.png';
       var fps = 60;
+      var sun = new Image();
+      sun.src = 'sun.png';
 
       var render = function() {
         setTimeout(function() {
@@ -20,6 +22,7 @@ window.onload = function(){
         context.clearRect(0, 0, width, height);
         context.save();
         context.translate(width /2  ,  height /2)
+
         context.drawImage(tree, 0-tree.width/6,0-tree.height/6, tree.width/3, tree.height/3);
         context.fillStyle='black';
         context.beginPath();
@@ -27,7 +30,8 @@ window.onload = function(){
         var x = radius * Math.sin(angle);
         var y =  radius * Math.cos(angle);
 
-        context.arc(x, y, objSize, 0, 2 * Math.PI);
+        context.drawImage(sun, x-sun.width/2, y-sun.height/2, sun.width, sun.height);
+        //context.arc(x, y, objSize, 0, 2 * Math.PI);
         context.stroke();
         context.fill();
 
