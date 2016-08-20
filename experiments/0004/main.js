@@ -9,13 +9,15 @@ window.onload = function(){
       speed = 0.05,
       objSize = 15;
 
+      var tree = new Image();
+      tree.src  = 'tree.png';
 
       var render = function() {
-
         context.restore();
         context.clearRect(0, 0, width, height);
         context.save();
         context.translate(width /2  ,  height /2)
+        context.drawImage(tree, 0-tree.width/6,0-tree.height/6, tree.width/3, tree.height/3);
         context.fillStyle='black';
         context.beginPath();
 
