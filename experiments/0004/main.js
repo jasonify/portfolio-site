@@ -44,6 +44,14 @@ window.onload = function(){
 
       render();
 
+      document.addEventListener('mousemove', function(e){
+        var x = e.clientX;
+        if( Math.abs(width /2 - x) <= width * 0.1){
+          speed = 0.1
+        } else{
+          speed = 0.02;
+        }
+      });
 
 
 
