@@ -3,13 +3,11 @@ document.body.appendChild(renderer.view);
 
 // create the root of the scene graph
 var stage = new PIXI.Container();
-
 var count = 0;
 
 // build a rope!
-var ropeLength = 600 / 20;
 var ropeLength = 30;
-
+var multipyer = 0.5;
 var points = [];
 
 for (var i = 0; i < 25; i++)
@@ -19,7 +17,8 @@ for (var i = 0; i < 25; i++)
 
 var strip = new PIXI.mesh.Rope(PIXI.Texture.fromImage('snake.png'), points);
 
-strip.position.x = 100;
+var offsetLeft = (window.innerWidth - 631 ) / 2;
+strip.position.x = offsetLeft;
 strip.position.y = 300;
 
 stage.addChild(strip);
@@ -39,7 +38,7 @@ function animate() {
 
     // make the snake
     for (var i = 0; i < points.length; i++) {
-        points[i].y = Math.sin((i * 0.5) + count) * 30;
+        points[i].y = Math.sin((i * multipyer) + count) * 30;
 
         points[i].x = i * ropeLength + Math.cos((i * 0.3) + count) * 20;
     }
@@ -51,7 +50,13 @@ function animate() {
 
 
 document.addEventListener('mousemove', function(e){
-  console.log('clientX', e.clientX);
+  var diff = Math.abs(window.innerWidth / 2 - e.clientX);
+  console.log('diff', diff);
+  diff *= 0.001;
+  multipyer = diff;
+  console.log('clientX', diff);
+
+
 });
 
 function renderPoints () {
