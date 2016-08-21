@@ -19,7 +19,7 @@ for (var i = 0; i < 25; i++)
 
 var strip = new PIXI.mesh.Rope(PIXI.Texture.fromImage('snake.png'), points);
 
-strip.position.x = -40;
+strip.position.x = 100;
 strip.position.y = 300;
 
 stage.addChild(strip);
