@@ -7,8 +7,8 @@ var stage = new PIXI.Container();
 var count = 0;
 
 // build a rope!
-var ropeLength = 918 / 20;
-var ropeLength = 45;
+var ropeLength = 600 / 20;
+var ropeLength = 30;
 
 var points = [];
 
@@ -39,20 +39,20 @@ function animate() {
 
     // make the snake
     for (var i = 0; i < points.length; i++) {
-
         points[i].y = Math.sin((i * 0.5) + count) * 30;
 
         points[i].x = i * ropeLength + Math.cos((i * 0.3) + count) * 20;
-
     }
 
     // render the stage
     renderer.render(stage);
-
-    // renderPoints();
-
     requestAnimationFrame(animate);
 }
+
+
+document.addEventListener('mousemove', function(e){
+  console.log('clientX', e.clientX);
+});
 
 function renderPoints () {
 
