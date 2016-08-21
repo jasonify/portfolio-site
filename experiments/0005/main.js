@@ -1,4 +1,4 @@
-var renderer = PIXI.autoDetectRenderer(1200, 600);
+var renderer = PIXI.autoDetectRenderer(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.view);
 
 // create the root of the scene graph
@@ -49,7 +49,7 @@ function animate() {
     // render the stage
     renderer.render(stage);
 
-    renderPoints();
+    // renderPoints();
 
     requestAnimationFrame(animate);
 }
