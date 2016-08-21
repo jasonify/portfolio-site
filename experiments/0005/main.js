@@ -17,9 +17,13 @@ for (var i = 0; i < 25; i++)
 
 var strip = new PIXI.mesh.Rope(PIXI.Texture.fromImage('snake.png'), points);
 
+// img width
 var offsetLeft = (window.innerWidth - 631 ) / 2;
 strip.position.x = offsetLeft;
-strip.position.y = 300;
+
+// img height
+var offsetTop = (window.innerHeight  -  127) /2;
+strip.position.y = offsetTop;
 
 stage.addChild(strip);
 
