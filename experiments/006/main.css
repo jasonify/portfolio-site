@@ -1,0 +1,47 @@
+body{
+  background: cyan;
+  cursor: pointer;
+}
+
+.frog{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  animation-name: down;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  position: relative;
+  animation-play-state: running;
+
+}
+
+.move{
+
+  animation-play-state: paused;
+
+}
+
+
+@keyframes down{
+  0%, 40% {
+    opacity: 0.2;
+    top: -100px;
+  }
+
+
+  40%{
+    opacity: 1;
+    top: -100px;
+  }
+
+  100%{
+    opacity: 1;
+    top: 200px;
+  }
+}
