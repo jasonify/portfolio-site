@@ -1,6 +1,9 @@
 body{
   background: cyan;
   cursor: pointer;
+  height: 2000px;
+  overflow:hidden;
+
 }
 
 .frog{
@@ -29,15 +32,15 @@ body{
 
 
 @keyframes down{
-  0%, 40% {
+  0% {
     opacity: 0.2;
     top: -100px;
   }
 
 
-  40%{
+  50%{
     opacity: 1;
-    top: -100px;
+    top: 50px;
   }
 
   100%{
