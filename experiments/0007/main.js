@@ -151,7 +151,7 @@ window.onload = function(){
     document.addEventListener('mousemove',function(e){
       var _x = e.clientX;
       var diff = _x - width/2;
-      bubblesSpeed = diff * 0.005 + 1.0;
+      bubblesSpeed = Math.abs(diff * 0.005) + 1.0;
       xLen = diff / width * 20;
       xLen = Math.max( 3, xLen);
       xLen = Math.min(12, xLen);
