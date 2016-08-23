@@ -90,7 +90,7 @@ window.onload = function(){
         context.beginPath();
         console.log(b);
         context.arc(b.x, b.y, b.radius, 0, 2 * Math.PI, false);
-        context.fillStyle = 'white';
+        context.fillStyle =  "rgba(255, 255, 255, 0.7)" ;
         context.fill();
       }
 
