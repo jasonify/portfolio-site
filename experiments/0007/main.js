@@ -51,17 +51,26 @@ window.onload = function(){
     var render = function() {
 
       ctx.restore();
-      var points1 = [];
-      for(var i = 0; i < 10 ; i++){
-        var x = i;
-        points1.push({x: x, y: -img.height*0.055  + i*20});
+      ctx.save();
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.translate(width/2, height/2);
+
+      for(var j = -2 ; j < 2 ; j++){
+        var points1 = [];
+        for(var i = 0; i < 5 ; i++){
+          var x = Math.sin(i*angle);
+
+          //console.log('x', x);
+          points1.push({x: x*50 + j*40 + 20, y: -img.height*0.065  + i*40});
+        }
+        angle+=speed;
+        drawPoints(points1);
       }
 
-      ctx.save();
-      ctx.translate(width/2, height/2);
-      drawPoints(points1);
       ctx.drawImage(img,  -img.width/2 
       , -img.height /2 , img.width, img.height);
+
+      requestAnimationFrame(render);
     }
 
     //context.drawImage(img, width/2-img.width/2, height/2-img.height/2, img.width, img.height);
