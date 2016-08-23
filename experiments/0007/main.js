@@ -58,6 +58,7 @@ window.onload = function(){
         for(var i = 0; i < 5 ; i++){
           var x = Math.sin(j+i*angle);
 
+          //console.log('x', x);
           var x = x*xLen*(5-i) + j*15 + 10;
           points1.push({x: x, y: -img.height*0.075  + i*yLen });
         }
@@ -82,7 +83,8 @@ window.onload = function(){
       var diff = _x - width/2;
       xLen = diff / width * 20;
       xLen = Math.max( 3, xLen);
-      xLen = Math.min(10, xLen);
+      xLen = Math.min(12, xLen);
+      //console.log('xLen', xLen);
     });
 
 };
