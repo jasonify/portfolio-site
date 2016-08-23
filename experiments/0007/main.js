@@ -39,16 +39,81 @@ window.onload = function(){
         ctx.stroke();
     }
 
-    //ctx.translate(300, 300);
-    //drawPoints(points);
-
     var yLen = 40;
     var xLen = 10;
+
+    // Prep bubbles:
+    var bubblesLeft = [];
+    var bubbleWidth = 20;
+    var bubblesLeftHeight = height + bubbleWidth;
+    var bubblesRightHeight = height + bubbleWidth;
+    var bubblesRight = [];
+
+    var generateBubbles = function(){
+      bubblesLeft = [];
+      bubbleWidth = 20;
+      bubblesLeftHeight = height + bubbleWidth;
+      bubblesRightHeight = height + bubbleWidth;
+      bubblesRight = [];
+
+      for(var i = 0; i < 5; i++) {
+        bubblesLeft.push({ 
+          x: 50-Math.random()*190 + width*0.2, 
+          y: Math.random()*200,
+          radius: Math.random() * 12 + 5});
+
+
+          bubblesRight.push({ 
+            x: 50-Math.random()*190 + width * 0.8, 
+            y: Math.random()*100,
+            radius: Math.random() * 22 + 10});
+      }
+    }
+    generateBubbles();
+
+
+
+    console.log(bubblesLeft);
+    console.log(bubblesRight);
+
+    var renderBubbles = function(){
+      bubblesLeftHeight -= 1;
+      bubblesRightHeight -=1;
+
+      if(bubblesRightHeight <= 0 - height*0.3){
+        generateBubbles();
+      }
+
+
+      var drawBubble = function(b) {
+        context.beginPath();
+        console.log(b);
+        context.arc(b.x, b.y, b.radius, 0, 2 * Math.PI, false);
+        context.fillStyle = 'white';
+        context.fill();
+      }
+
+
+      context.clearRect(0,0, canvas.width, canvas.height);
+      context.translate(0, bubblesLeftHeight);
+      for(var i = 0; i < bubblesLeft.length; i++){
+        var leftB= bubblesLeft[i];
+        var rightB = bubblesRight[i];
+        drawBubble(leftB);
+        drawBubble(rightB);
+      }
+
+
+    };
+
     var render = function() {
 
       ctx.restore();
       ctx.save();
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      renderBubbles();
+      ctx.restore();
+      ctx.save();
+
       ctx.translate(width/2, height/2);
 
       var points1 = [];
@@ -69,7 +134,11 @@ window.onload = function(){
       ctx.drawImage(img,  -img.width/2 
       , -img.height /2 , img.width, img.height);
 
-      requestAnimationFrame(render);
+
+    setTimeout(function(){  requestAnimationFrame(render);
+    }, 1000/60);
+
+
     }
 
     //context.drawImage(img, width/2-img.width/2, height/2-img.height/2, img.width, img.height);
