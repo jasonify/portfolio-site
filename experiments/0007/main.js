@@ -6,7 +6,7 @@ window.onload = function(){
       width = canvas.width = window.innerWidth,
       height = canvas.height = window.innerHeight,
       angle = 0,
-      speed = 0.01
+      speed = 0.008
 
 
       var ctx = context;
@@ -39,12 +39,6 @@ window.onload = function(){
         ctx.stroke();
     }
 
-    var points = [];
-    points.push({x: 0, y: 0});
-    points.push({x: 100, y: 50});
-    points.push({x: 400, y: 150});
-    points.push({x: 100, y: 250});
-
     //ctx.translate(300, 300);
     //drawPoints(points);
 
@@ -55,13 +49,14 @@ window.onload = function(){
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.translate(width/2, height/2);
 
+      var points1 = [];
       for(var j = -2 ; j < 2 ; j++){
-        var points1 = [];
-        for(var i = 0; i < 5 ; i++){
-          var x = Math.sin(i*angle);
+        points1 = [];
+        for(var i = 0; i < 5 + Math.floor(Math.random()*3) ; i++){
+          var x = Math.sin(j+i*angle);
 
           //console.log('x', x);
-          points1.push({x: x*50 + j*40 + 20, y: -img.height*0.065  + i*40});
+          points1.push({x: x*50 + j*15 + 10, y: -img.height*0.075  + i*40 });
         }
         angle+=speed;
         drawPoints(points1);
