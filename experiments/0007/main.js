@@ -24,6 +24,8 @@ window.onload = function(){
         // curve through the last two points
         ctx.quadraticCurveTo(points[i].x, points[i].y, points[i+1].x,points[i+1].y);
 
+        ctx.strokeStyle = '#E4AFFF';
+        ctx.lineWidth = 6;
         ctx.stroke();
     }
 
@@ -33,6 +35,7 @@ window.onload = function(){
     points.push({x: 400, y: 150});
     points.push({x: 100, y: 250});
 
+    // ctx.translate(300, 300);
     drawPoints(points);
 
 
