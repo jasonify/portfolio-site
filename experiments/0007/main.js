@@ -41,6 +41,7 @@ window.onload = function(){
 
     var yLen = 40;
     var xLen = 10;
+    var bubblesSpeed = 1;
 
     // Prep bubbles:
     var bubblesLeft = [];
@@ -77,8 +78,8 @@ window.onload = function(){
     console.log(bubblesRight);
 
     var renderBubbles = function(){
-      bubblesLeftHeight -= 1;
-      bubblesRightHeight -=1;
+      bubblesLeftHeight -= bubblesSpeed;
+      bubblesRightHeight -= bubblesSpeed;
 
       if(bubblesRightHeight <= 0 - height*0.3){
         generateBubbles();
@@ -150,6 +151,7 @@ window.onload = function(){
     document.addEventListener('mousemove',function(e){
       var _x = e.clientX;
       var diff = _x - width/2;
+      bubblesSpeed = diff * 0.005 + 1.0;
       xLen = diff / width * 20;
       xLen = Math.max( 3, xLen);
       xLen = Math.min(12, xLen);
