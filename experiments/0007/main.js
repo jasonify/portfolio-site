@@ -42,6 +42,8 @@ window.onload = function(){
     //ctx.translate(300, 300);
     //drawPoints(points);
 
+    var yLen = 40;
+    var xLen = 10;
     var render = function() {
 
       ctx.restore();
@@ -50,13 +52,15 @@ window.onload = function(){
       ctx.translate(width/2, height/2);
 
       var points1 = [];
+
       for(var j = -2 ; j < 2 ; j++){
         points1 = [];
-        for(var i = 0; i < 5 + Math.floor(Math.random()*3) ; i++){
+        for(var i = 0; i < 5 ; i++){
           var x = Math.sin(j+i*angle);
 
           //console.log('x', x);
-          points1.push({x: x*50 + j*15 + 10, y: -img.height*0.075  + i*40 });
+          var x = x*xLen*(5-i) + j*15 + 10;
+          points1.push({x: x, y: -img.height*0.075  + i*yLen });
         }
         angle+=speed;
         drawPoints(points1);
@@ -74,5 +78,13 @@ window.onload = function(){
       render();
     }
 
+    document.addEventListener('mousemove',function(e){
+      var _x = e.clientX;
+      var diff = _x - width/2;
+      xLen = diff / width * 20;
+      xLen = Math.max( 3, xLen);
+      xLen = Math.min(10, xLen);
+      console.log('xLen', xLen);
+    });
 
 };
