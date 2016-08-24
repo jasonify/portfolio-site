@@ -1,3 +1,4 @@
+// Modified slightly from webgl tutorial / class.
 window.onload = function(){
   console.log('Loaded');
 
@@ -64,10 +65,10 @@ window.onload = function(){
                 //gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
                 var pointSize = gl.getAttribLocation(shaderProgram, "pointSize");
-                gl.vertexAttrib1f(pointSize, 2);
+                gl.vertexAttrib1f(pointSize, 3);
 
                 var color = gl.getUniformLocation(shaderProgram, "color");
-                gl.uniform4f(color, 0, 0, 1, 0.8);
+                gl.uniform4f(color, 0, 0, 1, 0.5);
               }
 
 
