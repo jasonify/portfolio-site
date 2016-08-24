@@ -11,7 +11,7 @@ window.onload = function(){
           var gl,
           shaderProgram,
           vertices,
-          vertexCount = 2000,
+          vertexCount = 4000,
             mouseX = 0,
               mouseY = 0;
 
