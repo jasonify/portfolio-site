@@ -10,7 +10,7 @@ window.onload = function(){
           var gl,
           shaderProgram,
           vertices,
-          vertexCount = 5000,
+          vertexCount = 2000,
             mouseX = 0,
               mouseY = 0;
 
@@ -64,10 +64,10 @@ window.onload = function(){
                 //gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
                 var pointSize = gl.getAttribLocation(shaderProgram, "pointSize");
-                gl.vertexAttrib1f(pointSize, 1);
+                gl.vertexAttrib1f(pointSize, 2);
 
                 var color = gl.getUniformLocation(shaderProgram, "color");
-                gl.uniform4f(color, 0, 0, 0, 1);
+                gl.uniform4f(color, 0, 0, 1, 0.8);
               }
 
 
