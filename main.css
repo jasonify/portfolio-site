@@ -30,6 +30,10 @@ body {
   }
 
 
+  p{
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
 
 
   .v2-portfolio-link-desktop{
