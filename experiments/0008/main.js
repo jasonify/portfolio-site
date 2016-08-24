@@ -30,7 +30,7 @@ window.onload = function(){
                 gl = canvas.getContext("webgl");
 
                 gl.viewport(0, 0, canvas.width, canvas.height);
-                gl.clearColor(1, 1, 1, 1);
+                gl.clearColor(0.8, 0.7, 0.9, 1);
               }
 
               function createShaders() {
@@ -72,13 +72,18 @@ window.onload = function(){
 
 
               function draw() {
+                var ration = width / height;
+                
+                if( width > height){
+                  ratio = height / width;
+                }
                 for(var i = 0; i < vertexCount * 2; i += 2) {
                   var dx = vertices[i] - mouseX,
                     dy = vertices[i + 1] - mouseY,
                       dist = Math.sqrt(dx * dx + dy * dy);
                       if(dist < 0.2) {
-                        vertices[i] = mouseX + dx / dist * 0.2;
-                        vertices[i + 1] = mouseY + dy / dist * 0.2;
+                        vertices[i] = mouseX + dx / dist * 0.2  ;
+                        vertices[i + 1] = mouseY + dy / dist *  0.2/ratio;
                       }
                       else {
                         vertices[i] += Math.random() * 0.01 - 0.005;
