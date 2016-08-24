@@ -30,7 +30,7 @@ window.onload = function(){
                 gl = canvas.getContext("webgl");
 
                 gl.viewport(0, 0, canvas.width, canvas.height);
-                gl.clearColor(0.8, 0.7, 0.9, 1);
+                gl.clearColor(0.98, 0.75, 0.8, 1);
               }
 
               function createShaders() {
