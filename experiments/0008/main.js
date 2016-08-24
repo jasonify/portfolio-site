@@ -73,7 +73,7 @@ window.onload = function(){
 
 
               function draw() {
-                var ration = width / height;
+                var ratio = width / height;
                 
                 if( width > height){
                   ratio = height / width;
