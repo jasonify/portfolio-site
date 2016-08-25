@@ -14,7 +14,7 @@ window.onload = function(){
       max= 41,
       min= -41,
       moveCable = false,
-      cableDrawMax = 500,
+      cableDrawMax = 200,
       cableDrawnCount = 0,
       speed = 0.1
 
