@@ -20,8 +20,10 @@ window.onload = function(){
 
 
       var ctx = context;
+      var face = new Image();
+      face.src = 'mouseface.png';
       var img = new Image();
-      img.src = 'mouse.png';
+      img.src = 'mousebody.png';
 
 
 
@@ -98,10 +100,14 @@ window.onload = function(){
           }
           ctx.drawImage(img,-img.width/2 + xOff, -img.height/2, img.width, img.height);
 
+          if(inMotion || moveCable ){
+            ctx.drawImage(face,-img.width/2 + xOff, -img.height/2, img.width, img.height);
+          }
+
 
           setTimeout(function(){ 
             render();
-          }, 1000/30);
+          }, 1000/60);
         }
         render();
       });
