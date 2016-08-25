@@ -6,6 +6,8 @@ window.onload = function(){
       width = canvas.width = window.innerWidth,
       height = canvas.height = window.innerHeight,
       angle = 0,
+      inMotion = true,
+      shakes = 1000,
       speed = 0.1
 
 
@@ -40,14 +42,17 @@ window.onload = function(){
 
       var drawCord = function(){
         var points = [];
-        points.push({x: 0, y: 0});
-        points.push({x: 0, y: -60});
+        points.push({x: -img.width*0.02, y: 0});
+        points.push({x: -img.width*0.02, y: -180});
         
-        for(var i = 2; i < 12; i++){
-          points.push({x: Math.sin(angle+i)*100 , y: -i*20  });
+        for(var i = 4; i < 12; i++){
+          points.push({x: Math.sin(angle+i)*100 , y: -i*60  });
         }
 
+
+        if(inMotion){
         angle+= speed;
+        }
         console.log(JSON.stringify(points));
         drawPoints(points);
 
@@ -61,10 +66,10 @@ window.onload = function(){
           ctx.clearRect(0,0, width, height);
 
           ctx.translate( width / 2, height / 2);
-          //  ctx.drawImage(img,-img.width/2, -img.height/2, img.width, img.height);
-
 
           drawCord();
+          ctx.drawImage(img,-img.width/2, -img.height/2, img.width, img.height);
+
 
           setTimeout(function(){ 
             render();
