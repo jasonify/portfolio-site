@@ -1,0 +1,55 @@
+
+
+[ ] draggable elements
+[ ] meteor
+[ ] es6
+---
+[ ] MOBILE ****
+--
+[ ] framer.js / Framer
+  - features like: generators
+[ ] d3.js
+[ ] graph
+[ ] mo.js 
+[ ] gsap.js
+[ ] pixi.js
+[ ] phaser
+[ ] audiovisual libs
+[ ] p5.js
+[ ] angular
+[ ] react
+[ ] css animations
+[ ] typescript
+[ ] elm
+[ ] backend
+[ ] node
+[ ] socket.io
+[ ] web workers
+[ ] webgl
+[ ] html5
+[ ] html5 video
+
+
+[ ] parallax
+[ ] animate.css
+
+[ ] closurescript
+
+[ ] bootstrap
+[ ] material design
+
+
+[ ] manipulate images
+[ ] webcam 
+
+[ ] things with sliders
+
+
+[ ] js unity
+[ ] react native
+[ ] ios
+[ ] android
+[ ] haskell
+
+[ ] stripe
+
