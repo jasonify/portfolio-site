@@ -53,3 +53,50 @@
 
 [ ] stripe
 
+
+git log --graph --oneline --decorate --all
+
+
+
+[ ] quarts composer  for shaders
+[ ] minecraft java - look up recent
+
+
+Diferent Game Genres:
+- TextBased Games
+- Card Games (art heavy)
+- Board Games ( can be done physical + art)
+- Programmatic Music Generation ***
+- Framer Game
+- Blender Game
+
+- Data Viz
+- AI in games
+- Python Games
+106a games
+
+- OpenFrameworks
+- Learn by Example
+
+
+
+UNITY 2D
+
+Unreal 
+
+- Quartz Shaders
+- OpenGL Classes
+ - Animated Movies  3 hrs
+ - Stop Motion Film
+
+
+- Chrome Plugin
+
+- Scroll up and down as game play mechanic
+
+- Photo collage infnite game
+--------------------------------
+
+
+
+
