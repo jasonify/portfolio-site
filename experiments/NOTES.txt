@@ -90,13 +90,52 @@ Unreal
  - Stop Motion Film
 
 
+3 hour(ish) jams. Alternate between heavy programing | heavy code
+
 - Chrome Plugin
 
 - Scroll up and down as game play mechanic
 
 - Photo collage infnite game
+
+- Twriter Bots
+
 --------------------------------
 
+Goals:
+1hish, 2hrs learning before hand
+-- cool if start forming sets / "body of work"
+
+Wish List:
+
+[x] unity 3d game
+[x] twitch api bot
+[x] short movie
+[x] pattern design
+
+[ ] animated short movie *
+[ ] meteor site
+[ ] ios ap
+[ ] unity 2d game
+[ ] illustration
+[ ] traditional painting
+[ ] viz dev scene
+[ ] character design
+----
+[ ] twitter bot
+[ ] arduino work
+[ ] lettering work
+[ ] mid century inspired design 
+[ ] 3d character
+[ ] low poly 3d game
+[ ] graffiti piece
 
 
 
+
+
+
+
+
+
+CryEngine
