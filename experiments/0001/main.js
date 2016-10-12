@@ -1,7 +1,6 @@
 window.onload = function(){
   console.log('Loaded');
 
-
   var img = new Image();
   img.src = 'images/head.png';
 
