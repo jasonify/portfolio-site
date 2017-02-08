@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -499,6 +500,7 @@ li a:active {
 
 }
 
+
 @media (min-width: 550px) {
 
 
@@ -532,3 +534,13 @@ li a:active {
     margin-top: 50px;
   }
 }
+
+
+.video-player{
+    max-width: 35%;
+    min-width: 300px;
+}
+
+
+
+
