@@ -7,7 +7,7 @@
     var VECTOR_MIDDLE;
 
     var catWidth = 200;
-    var yarnWidth = 40;
+    var yarnWidth = 60;
     var eyeRadius = 10;
     var cat;
     var yarn;
@@ -184,7 +184,7 @@ window.onload = function(){
       context.save();
       context.translate(width/2, height/2);
       context.rotate(itemRotationVector.getAngle())
-      context.drawImage(yarn,-catWidth/2 - yarnWidth,-yarnWidth/2, yarnWidth, yarnWidth);
+      context.drawImage(yarn,-catWidth/2 - yarnWidth/2,-yarnWidth/2, yarnWidth, yarnWidth);
       context.restore();
     }
 
