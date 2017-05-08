@@ -47,7 +47,12 @@ var vector =  {
        }
     }
     if(this.scalarVelocity != null) {
-    this.setAngle(this.getAngle() + this.scalarVelocity);
+    var newVelocity  =  this.scalarVelocity;
+    newVelocity = Math.min(Math.abs( newVelocity), 1);
+    newVelocity *= this.direction
+    this.setVelocity(newVelocity);
+    console.log(newVelocity);
+    this.setAngle(this.getAngle() + newVelocity);
     }
   },
 
