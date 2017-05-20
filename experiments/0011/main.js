@@ -20,6 +20,9 @@
     // This should be set to be independent of angleTo center.
     let itemRotationVector = vector.create(1,1);
     itemRotationVector.setAngle(toRadians(0));
+    // Tells me the rotation position of the center piece
+    // as we pressed the mouse (so how much it was rotated)
+    // just before we started turning
     let onMouseDownItemRotationVector = vector.create(1,1);
     onMouseDownItemRotationVector.setAngle(toRadians(0));
 
@@ -36,10 +39,6 @@ window.onload = function(){
     height = canvas.height = window.innerHeight;
     VECTOR_MIDDLE = vector.create(width/2, height/2);
 
-    function getDeltaOfAngles(startAngle, endAngle){
-      // return startAngle.getAngle
-    }
-
     // atan2 gives us weird negative results for below the circle so we convert
     //  to standard 360 degrees:
     function convertTo360(negativeWeirdDegrees){
@@ -50,13 +49,6 @@ window.onload = function(){
       return result;
     }
 
-    function get360AngleFromCenter(targetVector){
-      // This is weird rads result with nevagive stuff
-      // We will transform it to clean 360 degrees
-      var rads =   VECTOR_MIDDLE.getAngleTo(targetVector.getX(), targetVector.getY());
-      return convertTo360( toDegrees(rads));
-    }
-
     function getAngleToMiddle(targetVector){
         return toDegrees(VECTOR_MIDDLE.getAngleTo(targetVector.getX(), targetVector.getY()));
     }
@@ -64,7 +56,7 @@ window.onload = function(){
     function getNewRotationForItem(){
       var diffAngle = angleDiff(startingMouseVector, endingMouseVector);
       var initialAngleForItem = convertTo360(toDegrees(onMouseDownItemRotationVector.getAngle()));
-      return (initialAngleForItem + diffAngle) %360 ;
+      return (initialAngleForItem + diffAngle) // %360 ;
     }
 
     function mousedownRender(){
@@ -76,13 +68,9 @@ window.onload = function(){
       // XXX: understand why the atan2 thing works here when subtracting angles:
       var startAngle = getAngleToMiddle(startVector);
       var endAngle = getAngleToMiddle(endVector);
-      console.log('startAngle', startAngle, 'endAngle', endAngle);
+      // console.log('startAngle', startAngle, 'endAngle', endAngle);
       var diffAngle = endAngle - startAngle;
       return diffAngle;
-    }
-
-    function getAverages(){
-      var previousPoint = lastMousePositions[lastMousePositions.length-2]
     }
 
     function spinPhysics(){
@@ -183,6 +171,7 @@ window.onload = function(){
     function drawYarn(){
       context.save();
       context.translate(width/2, height/2);
+      console.log('itemRoration x', itemRotationVector.getX(), 'y', itemRotationVector.getY(), 'len', itemRotationVector.getLength());
       context.rotate(itemRotationVector.getAngle())
       context.drawImage(yarn,-catWidth/2 - yarnWidth/2,-yarnWidth/2, yarnWidth, yarnWidth);
       context.restore();
