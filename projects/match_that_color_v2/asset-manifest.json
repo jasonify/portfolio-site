@@ -1,22 +1,22 @@
 {
   "files": {
-    "app.js": "/static/js/app.6551d59c.chunk.js",
-    "app.js.map": "/static/js/app.6551d59c.chunk.js.map",
+    "app.js": "/static/js/app.d9682163.chunk.js",
+    "app.js.map": "/static/js/app.d9682163.chunk.js.map",
     "runtime~app.js": "/static/js/runtime~app.27401809.js",
     "runtime~app.js.map": "/static/js/runtime~app.27401809.js.map",
-    "static/js/2.293127ba.chunk.js": "/static/js/2.293127ba.chunk.js",
-    "static/js/2.293127ba.chunk.js.map": "/static/js/2.293127ba.chunk.js.map",
+    "static/js/2.92388f77.chunk.js": "/static/js/2.92388f77.chunk.js",
+    "static/js/2.92388f77.chunk.js.map": "/static/js/2.92388f77.chunk.js.map",
     "favicon-16.png": "/favicon-16.png",
     "favicon-32.png": "/favicon-32.png",
     "favicon.ico": "/favicon.ico",
     "index.html": "/index.html",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "static/js/2.293127ba.chunk.js.LICENSE.txt": "/static/js/2.293127ba.chunk.js.LICENSE.txt"
+    "static/js/2.92388f77.chunk.js.LICENSE.txt": "/static/js/2.92388f77.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime~app.27401809.js",
-    "static/js/2.293127ba.chunk.js",
-    "static/js/app.6551d59c.chunk.js"
+    "static/js/2.92388f77.chunk.js",
+    "static/js/app.d9682163.chunk.js"
   ]
 }
