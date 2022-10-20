@@ -1,24 +1,24 @@
 {
   "files": {
-    "app.js": "./static/js/app.4b58b586.chunk.js",
-    "app.js.map": "./static/js/app.4b58b586.chunk.js.map",
+    "app.js": "./static/js/app.e3a241f4.chunk.js",
+    "app.js.map": "./static/js/app.e3a241f4.chunk.js.map",
     "runtime~app.js": "./static/js/runtime~app.318494c4.js",
     "runtime~app.js.map": "./static/js/runtime~app.318494c4.js.map",
-    "static/js/2.5ab65288.chunk.js": "./static/js/2.5ab65288.chunk.js",
-    "static/js/2.5ab65288.chunk.js.map": "./static/js/2.5ab65288.chunk.js.map",
+    "static/js/2.6d5ee1a1.chunk.js": "./static/js/2.6d5ee1a1.chunk.js",
+    "static/js/2.6d5ee1a1.chunk.js.map": "./static/js/2.6d5ee1a1.chunk.js.map",
     "favicon-16.png": "./favicon-16.png",
     "favicon-32.png": "./favicon-32.png",
     "favicon.ico": "./favicon.ico",
     "index.html": "./index.html",
     "manifest.json": "./manifest.json",
     "serve.json": "./serve.json",
-    "static/js/2.5ab65288.chunk.js.LICENSE.txt": "./static/js/2.5ab65288.chunk.js.LICENSE.txt",
+    "static/js/2.6d5ee1a1.chunk.js.LICENSE.txt": "./static/js/2.6d5ee1a1.chunk.js.LICENSE.txt",
     "static/media/black-gradient-rotated.png": "./static/media/black-gradient-rotated.693a1835.png",
     "static/media/color-wheel.png": "./static/media/color-wheel.233ad67a.png"
   },
   "entrypoints": [
     "static/js/runtime~app.318494c4.js",
-    "static/js/2.5ab65288.chunk.js",
-    "static/js/app.4b58b586.chunk.js"
+    "static/js/2.6d5ee1a1.chunk.js",
+    "static/js/app.e3a241f4.chunk.js"
   ]
 }
