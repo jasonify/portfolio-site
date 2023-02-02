@@ -535,6 +535,7 @@ li a:active {
 .video-player{
     max-width: 35%;
     min-width: 300px;
+    max-height: 95vh;
 }
 
 
