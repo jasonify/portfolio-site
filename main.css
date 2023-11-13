@@ -2,8 +2,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: radial-gradient(50% 100%, #FFFFFF 3%, #EDEDED 100%);
+  background-image: linear-gradient(-180deg, #FFFFFF 3%, #F1F1F1 98%);
   font-family: Lato, Helvetica, Arial;
+  min-height: 100vh;
 }
 
 
@@ -42,7 +43,6 @@ body {
   }
 
 .v2-main-container{
-  background-image: linear-gradient(-180deg, #FFFFFF 3%, #F1F1F1 98%);
   padding: 15px;
 }
 
