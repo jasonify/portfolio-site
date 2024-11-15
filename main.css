@@ -62,6 +62,18 @@ body {
   font-size: 4.5vw;
   padding-bottom: 2vh;
 }
+
+.v2-text-med {
+  font-size: 4.5vw;
+  padding-bottom: 2vh;
+}
+
+@media (max-width: 768px) {
+  .v2-text-med {
+    margin-top: 20px;
+  }
+}
+
 .v2-icons img {
   padding: 2vw;
 }
